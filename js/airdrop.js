@@ -30,11 +30,11 @@ async function run_func(funcName,funcParm,funcValue)
 	//funcParm = '';
 	var func='try{'+
 			//get gas
-			'hdxCI.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000},function(e1,cur_gas){'+
+			'hdxCI.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:4000000000},function(e1,cur_gas){'+
 				'if(e1){'+
 					'alert("gaslimit error:"+e1);'+
 				'}else{'+
-					'hdxCI.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000,gas:cur_gas},function(e2,ret){'+
+					'hdxCI.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:4000000000,gas:cur_gas},function(e2,ret){'+
 				'if(e2){'+
 					'alert("Cancel ");'+
 				'}else{'+					
@@ -70,11 +70,11 @@ async function run_func2(funcName,funcParm,funcValue)
 	//funcParm = '';
 	var func='try{'+
 			//get gas
-			'hdxCI2.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000},function(e1,cur_gas){'+
+			'hdxCI2.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:4000000000},function(e1,cur_gas){'+
 				'if(e1){'+
 					'alert("gaslimit error:"+e1);'+
 				'}else{'+
-					'hdxCI2.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000,gas:cur_gas},function(e2,ret){'+
+					'hdxCI2.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:4000000000,gas:cur_gas},function(e2,ret){'+
 				'if(e2){'+
 					'/*alert("Cancel ");*/ aui.toast({msg: "You Cancel您已取消支付 "}); '+
 				'}else{'+					
@@ -111,11 +111,11 @@ async function contract_K0(funcName,funcParm,funcValue)
 	//funcParm = '';
 	var func='try{'+
 			//get gas
-			'hdxCI.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000},function(e1,cur_gas){'+
+			'hdxCI.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:5000000000},function(e1,cur_gas){'+
 				'if(e1){'+
 					'alert("gaslimit error:"+e1);'+
 				'}else{'+
-					'hdxCI.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000,gas:cur_gas},function(e2,ret){'+
+					'hdxCI.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:5000000000,gas:cur_gas},function(e2,ret){'+
 				'if(e2){'+
 					'/*alert("Cancel ");*/ aui.toast({msg: "You Cancel您已取消支付 "}); '+
 				'}else{'+					
@@ -151,11 +151,11 @@ async function contract_OK(funcName,funcParm,funcValue)
 	//funcParm = '';
 	var func='try{'+
 			//get gas
-			'hdxCIOK.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000},function(e1,cur_gas){'+
+			'hdxCIOK.'+funcName+'('+funcParm+').estimateGas({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:5000000000},function(e1,cur_gas){'+
 				'if(e1){'+
 					'alert("gaslimit error:"+e1);'+
 				'}else{'+
-					'hdxCIOK.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:8000000000,gas:cur_gas},function(e2,ret){'+
+					'hdxCIOK.'+funcName+'('+funcParm+').send({from:"'+_from+'",to:"'+_to+'",value:'+funcValue+',gasPrice:5000000000,gas:cur_gas},function(e2,ret){'+
 				'if(e2){'+
 					'/*alert("Cancel ");*/ aui.toast({msg: "You Cancel您已取消支付 "}); '+
 				'}else{'+					
